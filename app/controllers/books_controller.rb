@@ -4,7 +4,6 @@ class BooksController < ApplicationController
   end
 
   def create
-    byebug
     book = Book.new(book_params)
     
     if book.save
